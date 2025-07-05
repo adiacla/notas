@@ -58,8 +58,9 @@ if st.button("Predecir"):
     prediccion_etiqueta = label_encoders["Resultado"].inverse_transform(prediccion_numerica)
 
     # Mostrar el resultado con emojis
+    st.write(prediccion_numerica,nueva_observacion_codificada)
     if prediccion_etiqueta[0] == "Sí":
-        st.write(prediccion_numerica,nueva_observacion_codificada)
+        
         st.success(f"Felicitaciones Aprueba! 😊")
     else:
         st.error(f"No aprueba 😞")
