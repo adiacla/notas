@@ -14,17 +14,17 @@ model = joblib.load(nombre_archivo_modelo)
 label_encoders = {}
 # Horas de Estudio: Alta -> 1, Baja -> 0
 le_horas_estudio = LabelEncoder()
-le_horas_estudio.fit(["Alta", "Baja"]) # Asegurarse de que el orden sea el mismo
+le_horas_estudio.fit([""Baja",Alta"]) # Asegurarse de que el orden sea el mismo
 label_encoders["Horas de Estudio"] = le_horas_estudio
 
 # Asistencia: Buena -> 1, Mala -> 0
 le_asistencia = LabelEncoder()
-le_asistencia.fit(["Buena", "Mala"]) # Asegurarse de que el orden sea el mismo
+le_asistencia.fit(["Mala","Buena"]) # Asegurarse de que el orden sea el mismo
 label_encoders["Asistencia"] = le_asistencia
 
 # Resultado: Sí -> 1, No -> 0
 le_resultado = LabelEncoder()
-le_resultado.fit(["Sí", "No"]) # Asegurarse de que el orden sea el mismo
+le_resultado.fit(["No","Sí"]) # Asegurarse de que el orden sea el mismo
 label_encoders["Resultado"] = le_resultado
 
 
