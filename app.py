@@ -59,6 +59,7 @@ if st.button("Predecir"):
 
     # Mostrar el resultado con emojis
     if prediccion_etiqueta[0] == "Sí":
+        st.write(prediccion_numerica)
         st.success(f"Felicitaciones Aprueba! 😊")
     else:
         st.error(f"No aprueba 😞")
